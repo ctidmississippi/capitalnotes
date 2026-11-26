@@ -12,11 +12,22 @@
       {"name": "NPR Politics", "url": "https://feeds.npr.org/1014/rss.xml"},
       {"name": "BBC News", "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"},
       {"name": "Fox News", "url": "https://moxie.foxnews.com/google-publisher/politics.xml"},
-      {"name": "The Guardian", "url": "https://www.theguardian.com/us-news/us-politics/rss"}
+      {"name": "The Guardian", "url": "https://www.theguardian.com/us-news/us-politics/rss"},
+      {"name": "Politico", "url": "https://rss.politico.com/politics-news.xml"},
+      {"name": "Politico", "url": "https://rss.politico.com/congress.xml"},
+      {"name": "Axios", "url": "https://api.axios.com/feed/"},
+      {"name": "The Hill", "url": "https://thehill.com/homenews/feed/"},
+      {"name": "CBS News", "url": "https://www.cbsnews.com/latest/rss/politics"},
+      {"name": "NBC News", "url": "https://feeds.nbcnews.com/nbcnews/public/politics"},
+      {"name": "ABC News", "url": "https://abcnews.go.com/abcnews/politicsheadlines"},
+      {"name": "The New York Times", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"},
+      {"name": "The Washington Post", "url": "https://feeds.washingtonpost.com/rss/politics"},
+      {"name": "Wall Street Journal", "url": "https://feeds.content.dowjones.io/public/rss/RSSWashingtonWire"}
     ],
     "washington": [
       {"q": "White House Trump administration"}, {"q": "Congress Senate House Republicans Democrats"},
-      {"q": "Pentagon OR Treasury OR Commerce Department"}, {"q": "Speaker Johnson OR Thune OR Schumer OR Jeffries"}
+      {"q": "Pentagon OR Treasury OR Commerce Department"}, {"q": "Speaker Johnson OR Thune OR Schumer OR Jeffries"},
+      {"q": "Politico OR Axios Washington"}, {"q": "cabinet OR Pentagon OR Treasury"}
     ],
     "world": [
       {"q": "Iran war OR Strait of Hormuz"}, {"q": "Russia Ukraine war"}, {"q": "Gaza OR Israel OR Hamas"},
@@ -25,7 +36,8 @@
     "justice": [
       {"q": "Supreme Court ruling"}, {"q": "Justice Department OR FBI investigation"},
       {"q": "federal judge blocks OR rules Trump administration"}, {"q": "immigration ICE OR deportation"},
-      {"q": "Fed inflation OR jobs report OR tariffs"}
+      {"q": "Fed inflation OR jobs report OR tariffs"}, {"q": "state legislature OR governor signs OR attorney general"},
+      {"q": "Medicaid OR Social Security OR healthcare policy"}
     ],
     "elections": [
       {"q": "midterm elections results OR recount"}, {"q": "2028 presidential campaign"},
