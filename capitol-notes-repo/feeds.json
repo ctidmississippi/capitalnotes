@@ -1,0 +1,35 @@
+{
+  "timezone": "America/Chicago",
+  "max_age_hours": 36,
+  "column_count": 15,
+  "elections_title": "CAMPAIGNS & CONGRESS",
+  "elections_count": 10,
+  "sections": {
+    "top": [
+      {"q": "Trump White House"}, {"q": "Congress Senate House"}, {"q": "Supreme Court OR Justice Department"},
+      {"q": "Iran OR Ukraine OR Israel"}, {"q": "tariffs OR economy politics"},
+      {"name": "Political Wire", "url": "https://politicalwire.com/feed/"},
+      {"name": "NPR Politics", "url": "https://feeds.npr.org/1014/rss.xml"},
+      {"name": "BBC News", "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"},
+      {"name": "Fox News", "url": "https://moxie.foxnews.com/google-publisher/politics.xml"},
+      {"name": "The Guardian", "url": "https://www.theguardian.com/us-news/us-politics/rss"}
+    ],
+    "washington": [
+      {"q": "White House Trump administration"}, {"q": "Congress Senate House Republicans Democrats"},
+      {"q": "Pentagon OR Treasury OR Commerce Department"}, {"q": "Speaker Johnson OR Thune OR Schumer OR Jeffries"}
+    ],
+    "world": [
+      {"q": "Iran war OR Strait of Hormuz"}, {"q": "Russia Ukraine war"}, {"q": "Gaza OR Israel OR Hamas"},
+      {"q": "China OR Taiwan foreign policy"}, {"q": "NATO OR Europe OR United Nations"}
+    ],
+    "justice": [
+      {"q": "Supreme Court ruling"}, {"q": "Justice Department OR FBI investigation"},
+      {"q": "federal judge blocks OR rules Trump administration"}, {"q": "immigration ICE OR deportation"},
+      {"q": "Fed inflation OR jobs report OR tariffs"}
+    ],
+    "elections": [
+      {"q": "midterm elections results OR recount"}, {"q": "2028 presidential campaign"},
+      {"q": "redistricting OR governor race OR Senate race"}, {"q": "DNC OR RNC party leadership"}
+    ]
+  }
+}
