@@ -1,47 +1,303 @@
 {
-  "timezone": "America/Chicago",
-  "max_age_hours": 36,
-  "column_count": 15,
-  "elections_title": "CAMPAIGNS & CONGRESS",
-  "elections_count": 10,
-  "sections": {
+ "timezone": "America/Chicago",
+ "max_age_hours": 36,
+ "column_count": 15,
+ "elections_title": "CAMPAIGNS & CONGRESS",
+ "elections_count": 10,
+ "sections": {
+  "top": [
+   {
+    "q": "Trump White House"
+   },
+   {
+    "q": "Congress Senate House"
+   },
+   {
+    "q": "Supreme Court OR Justice Department"
+   },
+   {
+    "q": "Iran OR Ukraine OR Israel"
+   },
+   {
+    "q": "tariffs OR economy politics"
+   },
+   {
+    "name": "Political Wire",
+    "url": "https://politicalwire.com/feed/"
+   },
+   {
+    "name": "NPR Politics",
+    "url": "https://feeds.npr.org/1014/rss.xml"
+   },
+   {
+    "name": "BBC News",
+    "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
+   },
+   {
+    "name": "Fox News",
+    "url": "https://moxie.foxnews.com/google-publisher/politics.xml"
+   },
+   {
+    "name": "The Guardian",
+    "url": "https://www.theguardian.com/us-news/us-politics/rss"
+   },
+   {
+    "name": "Politico",
+    "url": "https://rss.politico.com/politics-news.xml"
+   },
+   {
+    "name": "Politico",
+    "url": "https://rss.politico.com/congress.xml"
+   },
+   {
+    "name": "Axios",
+    "url": "https://api.axios.com/feed/"
+   },
+   {
+    "name": "The Hill",
+    "url": "https://thehill.com/homenews/feed/"
+   },
+   {
+    "name": "CBS News",
+    "url": "https://www.cbsnews.com/latest/rss/politics"
+   },
+   {
+    "name": "NBC News",
+    "url": "https://feeds.nbcnews.com/nbcnews/public/politics"
+   },
+   {
+    "name": "ABC News",
+    "url": "https://abcnews.go.com/abcnews/politicsheadlines"
+   },
+   {
+    "name": "The New York Times",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"
+   },
+   {
+    "name": "The Washington Post",
+    "url": "https://feeds.washingtonpost.com/rss/politics"
+   },
+   {
+    "name": "Wall Street Journal",
+    "url": "https://feeds.content.dowjones.io/public/rss/RSSWashingtonWire"
+   }
+  ],
+  "washington": [
+   {
+    "q": "White House Trump administration"
+   },
+   {
+    "q": "Congress Senate House Republicans Democrats"
+   },
+   {
+    "q": "Pentagon OR Treasury OR Commerce Department"
+   },
+   {
+    "q": "Speaker Johnson OR Thune OR Schumer OR Jeffries"
+   },
+   {
+    "q": "Politico OR Axios Washington"
+   },
+   {
+    "q": "cabinet OR Pentagon OR Treasury"
+   }
+  ],
+  "world": [
+   {
+    "q": "Iran war OR Strait of Hormuz"
+   },
+   {
+    "q": "Russia Ukraine war"
+   },
+   {
+    "q": "Gaza OR Israel OR Hamas"
+   },
+   {
+    "q": "China OR Taiwan foreign policy"
+   },
+   {
+    "q": "NATO OR Europe OR United Nations"
+   }
+  ],
+  "justice": [
+   {
+    "q": "Supreme Court ruling"
+   },
+   {
+    "q": "Justice Department OR FBI investigation"
+   },
+   {
+    "q": "federal judge blocks OR rules Trump administration"
+   },
+   {
+    "q": "immigration ICE OR deportation"
+   },
+   {
+    "q": "Fed inflation OR jobs report OR tariffs"
+   },
+   {
+    "q": "state legislature OR governor signs OR attorney general"
+   },
+   {
+    "q": "Medicaid OR Social Security OR healthcare policy"
+   }
+  ],
+  "elections": [
+   {
+    "q": "midterm elections results OR recount"
+   },
+   {
+    "q": "2028 presidential campaign"
+   },
+   {
+    "q": "redistricting OR governor race OR Senate race"
+   },
+   {
+    "q": "DNC OR RNC party leadership"
+   }
+  ]
+ },
+ "block_sources": [
+  "newsbreak",
+  "msn.com",
+  "dailymail.co.uk"
+ ],
+ "pages": [
+  {
+   "file": "campaigns.html",
+   "nav": "CAMPAIGNS",
+   "title": "Campaign Notes",
+   "logo": "CAMPAIGN NOTES",
+   "media_title": "2028 WATCH",
+   "media_count": 10,
+   "column_count": 15,
+   "slots": {
+    "top": "top",
+    "media": "president",
+    "col1": "congress",
+    "col2": "governors",
+    "col3": "races"
+   },
+   "sections": {
     "top": [
-      {"q": "Trump White House"}, {"q": "Congress Senate House"}, {"q": "Supreme Court OR Justice Department"},
-      {"q": "Iran OR Ukraine OR Israel"}, {"q": "tariffs OR economy politics"},
-      {"name": "Political Wire", "url": "https://politicalwire.com/feed/"},
-      {"name": "NPR Politics", "url": "https://feeds.npr.org/1014/rss.xml"},
-      {"name": "BBC News", "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"},
-      {"name": "Fox News", "url": "https://moxie.foxnews.com/google-publisher/politics.xml"},
-      {"name": "The Guardian", "url": "https://www.theguardian.com/us-news/us-politics/rss"},
-      {"name": "Politico", "url": "https://rss.politico.com/politics-news.xml"},
-      {"name": "Politico", "url": "https://rss.politico.com/congress.xml"},
-      {"name": "Axios", "url": "https://api.axios.com/feed/"},
-      {"name": "The Hill", "url": "https://thehill.com/homenews/feed/"},
-      {"name": "CBS News", "url": "https://www.cbsnews.com/latest/rss/politics"},
-      {"name": "NBC News", "url": "https://feeds.nbcnews.com/nbcnews/public/politics"},
-      {"name": "ABC News", "url": "https://abcnews.go.com/abcnews/politicsheadlines"},
-      {"name": "The New York Times", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"},
-      {"name": "The Washington Post", "url": "https://feeds.washingtonpost.com/rss/politics"},
-      {"name": "Wall Street Journal", "url": "https://feeds.content.dowjones.io/public/rss/RSSWashingtonWire"}
+     {
+      "q": "election campaign"
+     },
+     {
+      "q": "2028 presidential campaign"
+     },
+     {
+      "q": "Senate race OR House race"
+     },
+     {
+      "q": "governor race 2026 OR 2027"
+     },
+     {
+      "name": "Political Wire",
+      "url": "https://politicalwire.com/feed/",
+      "match": "campaign|midterm|election|primary|poll|candidate|governor|senate race|house race|2028|nominee|fundrais|redistrict|ballot|caucus|running for"
+     },
+     {
+      "name": "Politico",
+      "url": "https://rss.politico.com/politics-news.xml",
+      "match": "campaign|midterm|election|primary|poll|candidate|governor|senate race|house race|2028|nominee|fundrais|redistrict|ballot|caucus|running for"
+     },
+     {
+      "name": "The Hill",
+      "url": "https://thehill.com/homenews/campaign/feed/"
+     },
+     {
+      "name": "NPR Politics",
+      "url": "https://feeds.npr.org/1014/rss.xml",
+      "match": "campaign|midterm|election|primary|poll|candidate|governor|senate race|house race|2028|nominee|fundrais|redistrict|ballot|caucus|running for"
+     },
+     {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/us-politics/rss",
+      "match": "campaign|midterm|election|primary|poll|candidate|governor|senate race|house race|2028|nominee|fundrais|redistrict|ballot|caucus|running for"
+     }
     ],
-    "washington": [
-      {"q": "White House Trump administration"}, {"q": "Congress Senate House Republicans Democrats"},
-      {"q": "Pentagon OR Treasury OR Commerce Department"}, {"q": "Speaker Johnson OR Thune OR Schumer OR Jeffries"},
-      {"q": "Politico OR Axios Washington"}, {"q": "cabinet OR Pentagon OR Treasury"}
+    "congress": [
+     {
+      "q": "Senate race 2028 candidate"
+     },
+     {
+      "q": "House Democrats OR House Republicans leadership election"
+     },
+     {
+      "q": "Senate majority leader OR Speaker race vote"
+     },
+     {
+      "q": "retiring OR resigns OR announces run Congress"
+     },
+     {
+      "q": "incoming Congress freshman class"
+     },
+     {
+      "q": "DCCC OR NRCC OR DSCC OR NRSC"
+     }
     ],
-    "world": [
-      {"q": "Iran war OR Strait of Hormuz"}, {"q": "Russia Ukraine war"}, {"q": "Gaza OR Israel OR Hamas"},
-      {"q": "China OR Taiwan foreign policy"}, {"q": "NATO OR Europe OR United Nations"}
+    "president": [
+     {
+      "q": "2028 presidential campaign"
+     },
+     {
+      "q": "2028 Democratic primary"
+     },
+     {
+      "q": "2028 Republican primary Vance OR Rubio"
+     },
+     {
+      "q": "Newsom OR Pritzker OR Shapiro OR Beshear OR Moore 2028"
+     },
+     {
+      "q": "Ocasio-Cortez OR Buttigieg OR Whitmer 2028"
+     },
+     {
+      "q": "Trump third term OR successor"
+     }
     ],
-    "justice": [
-      {"q": "Supreme Court ruling"}, {"q": "Justice Department OR FBI investigation"},
-      {"q": "federal judge blocks OR rules Trump administration"}, {"q": "immigration ICE OR deportation"},
-      {"q": "Fed inflation OR jobs report OR tariffs"}, {"q": "state legislature OR governor signs OR attorney general"},
-      {"q": "Medicaid OR Social Security OR healthcare policy"}
+    "governors": [
+     {
+      "q": "governor race 2026 results"
+     },
+     {
+      "q": "governor-elect OR governor election 2027"
+     },
+     {
+      "q": "Democratic Governors Association OR Republican Governors Association"
+     },
+     {
+      "q": "Virginia OR New Jersey governor"
+     },
+     {
+      "q": "governor announces run OR candidacy 2026"
+     },
+     {
+      "q": "lieutenant governor OR attorney general race"
+     }
     ],
-    "elections": [
-      {"q": "midterm elections results OR recount"}, {"q": "2028 presidential campaign"},
-      {"q": "redistricting OR governor race OR Senate race"}, {"q": "DNC OR RNC party leadership"}
+    "races": [
+     {
+      "q": "midterm elections results"
+     },
+     {
+      "q": "special election OR runoff"
+     },
+     {
+      "q": "redistricting map court OR legislature"
+     },
+     {
+      "q": "campaign finance OR fundraising quarter"
+     },
+     {
+      "q": "polls voters survey Democrats Republicans"
+     },
+     {
+      "q": "DNC OR RNC chair OR leadership"
+     }
     ]
+   }
   }
+ ]
 }
