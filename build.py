@@ -79,6 +79,8 @@ def load(feeds):
     now = datetime.now(timezone.utc)
     block = [b.lower() for b in CFG.get("block_sources", [])]
     items = [i for i in items if not any(b in i["source"].lower() or b in i["link"].lower() for b in block)]
+    bt = CFG.get("block_titles")
+    if bt: items = [i for i in items if not re.search(bt, i["title"], re.I)]
     return [i for i in items if now - i["when"] <= MAX_AGE], len(jobs), sum(r is not None for r in roots)
 
 def esc(s): return html.escape(s, quote=True)
