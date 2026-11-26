@@ -93,13 +93,17 @@ def main():
         items, n, ok = load(feeds); ok_total += ok; n_total += n
         sections[key] = [g for g in cluster(items)]
         sections[key].sort(key=lambda g: (g["score"], g["when"]), reverse=True)
-    used = set()
+    used, chosen = set(), []
+    GENERIC = set("trump president administration house senate congress republican republicans democrats democratic white federal court national says american americans state states over amid report reports".split())
+    def topic(t): return {w for w in tokens(t) if w not in GENERIC and len(w) > 3}
     def take(key, n):
         out = []
+        need = 1 if key == "top" else 2  # shared topical words that mark a duplicate story
         for g in sections[key]:
-            if g["link"] in used or len(g["items"]) == 0: continue
-            if any(len(tokens(g["title"]) & tokens(u)) / max(1, len(tokens(g["title"]))) > .6 for u in used if isinstance(u, str) and " " in u): continue
-            used.add(g["link"]); used.add(g["title"]); out.append(g)
+            if g["link"] in used: continue
+            tk = topic(g["title"])
+            if any(len(tk & c) >= min(need, len(tk), len(c)) and tk & c for c in chosen): continue
+            used.add(g["link"]); chosen.append(tk); out.append(g)
             if len(out) == n: break
         return out
     lead = take("top", 2); tl = take("top", 4)
