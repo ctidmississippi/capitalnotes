@@ -190,7 +190,7 @@
       "q": "Senate race OR House race"
      },
      {
-      "q": "governor race 2026 OR 2027"
+      "q": "governor race United States Democrat OR Republican"
      },
      {
       "name": "Political Wire",
@@ -262,7 +262,7 @@
       "q": "governor race 2026 results"
      },
      {
-      "q": "governor-elect OR governor election 2027"
+      "q": "governor-elect OR governor election Virginia OR New Jersey OR Louisiana OR Kentucky"
      },
      {
       "q": "Democratic Governors Association OR Republican Governors Association"
@@ -271,7 +271,7 @@
       "q": "Virginia OR New Jersey governor"
      },
      {
-      "q": "governor announces run OR candidacy 2026"
+      "q": "governor candidate announces run Democrat OR Republican state"
      },
      {
       "q": "lieutenant governor OR attorney general race"
@@ -282,7 +282,7 @@
       "q": "midterm elections results"
      },
      {
-      "q": "special election OR runoff"
+      "q": "special election OR runoff Congress OR legislature U.S."
      },
      {
       "q": "redistricting map court OR legislature"
@@ -299,5 +299,6 @@
     ]
    }
   }
- ]
+ ],
+ "block_titles": "\\b(INEC|Tinubu|APC|PDP|Nigeria\\w*|Wike|Ogun|Kwara|Bauchi|Lagos|Abuja|COMELEC|Philippine\\w*|Barangay|Singapore|SG VP|Zimbabwe\\w*|Uganda\\w*)\\b|[\\U0001D400-\\U0001D7FF]"
 }
